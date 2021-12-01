@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+button {
+  margin: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fonte-branca {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+/*   ↓↓ Banner ↓↓   */
+
+.container-banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 90%;
+  height: 100%;
+}
+
+#apresentacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  font-weight: 600;
+
+  width: 500px;
+  height: 500px;
+}
+
+#texto-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* botao↓↓↓ */
+.btn {
+  background-color: var(--background-color);
+
+  position: relative;
+  cursor: pointer;
+
+  --background-color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  height: 50px;
+
+  background: none;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn.btn-background-circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: -1;
+  background-color: var(--background-color);
+  border-radius: 50%;
+
+  transition: transform 500ms ease-in-out;
+  transform: scale(1.5);
+}
+
+.btn.btn-background-circle:hover::before,
+.btn.btn-background-circle:focus::before {
+  transform: scale(0);
+}
+
+.btn.btn-background-circle {
+  z-index: 1;
+  overflow: hidden;
+  background-color: #c83e4d;
+  transition: color 500ms ease-in-out;
+}
+
+.btn.btn-background-circle:hover,
+.btn.btn-background-circle:focus {
+  color: #ffffff;
+}
+/* botao^^ */
+
+#projetos-imagem {
+  width: 400px;
+  height: 600px;
+
+  border-style: solid;
+  border-width: thin;
+  border-radius: 10px;
+  border-color: #ffffff;
+
+  background-size: cover;
+  background-position: center;
+  background-image: url(/imagens/projeto-2.jpeg);
+}
+
+.imagem-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/imagens/eletricista.jpg);
+}
