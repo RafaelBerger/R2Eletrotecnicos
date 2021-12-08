@@ -1,6 +1,7 @@
 .fonte-branca {
   color: #ffffff;
   font-size: 18px;
+  text-align: left;
 }
 
 /*   ↓↓ Banner ↓↓   */
@@ -94,14 +95,30 @@
   width: 400px;
   height: 600px;
 
-  border-style: solid;
-  border-width: thin;
   border-radius: 10px;
-  border-color: #ffffff;
 
-  background-size: cover;
-  background-position: center;
-  background-image: url(/imagens/projeto-2.jpeg);
+  position: relative;
+  overflow: hidden;
+}
+
+#projetos-imagem img {
+  opacity: 0;
+
+  width: 400px;
+  height: 600px;
+
+  border: solid;
+  border-color: #ffffff;
+  border-radius: 10px;
+
+  position: absolute;
+  object-fit: cover;
+
+  transition: opacity 800ms;
+}
+
+#projetos-imagem img.selected {
+  opacity: 1;
 }
 
 .imagem-bg {
