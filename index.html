@@ -11,9 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/geral.css" />
     <link rel="stylesheet" href="./css/banner.css" />
     <link rel="stylesheet" href="./css/servicos.css" />
+    <link rel="stylesheet" href="./css/informacoes.css" />
   </head>
   <body>
     <section class="imagem-bg">
@@ -54,36 +59,107 @@
     <section class="container-servicos">
       <ul id="lista-servicos">
         <li class="item-lista">
+          <span class="material-icons md-48"> square_foot </span>
           <h2>Projetos</h2>
-          <p class="espaco-cima">
+          <p class="texto-serv">
             Projetos elétricos residenciais, comercias, dimensionamento padrão
             de energia da concessionária.
           </p>
         </li>
         <li class="item-lista">
+          <span class="material-icons md-48"> verified_user </span>
           <h2>CONFEA</h2>
-          <p class="espaco-cima">
+          <p class="texto-serv">
             Credenciado no Conselho Regional dos Técnicos Industriais no N°
             ------.
           </p>
         </li>
         <li class="item-lista">
+          <span class="material-icons md-48"> electrical_services </span>
           <h2>Instalações</h2>
-          <p class="espaco-cima">Instalações estruturais e elétricas.</p>
+          <p class="texto-serv">Instalações estruturais e elétricas.</p>
         </li>
         <li class="item-lista">
+          <span class="material-icons md-48"> wb_incandescent </span>
           <h2>Iluminação</h2>
-          <p class="espaco-cima">
+          <p class="texto-serv">
             Projetos de decoração em gesso e iluminação em geral
             (Luminotécnica).
           </p>
         </li>
         <li class="item-lista">
+          <span class="material-icons md-48"> handyman </span>
           <h2>Manutenção</h2>
-          <p class="espaco-cima">Manutenção geral em baixa tensão(BT).</p>
+          <p class="texto-serv">Manutenção geral em baixa tensão(BT).</p>
         </li>
       </ul>
     </section>
+
+    <section class="info-servicos">
+      <div class="info">
+        <div class="informacao-container">
+          <h1 class="titulo-info">Instalação estrutural</h1>
+          <p class="texto-info">
+            Fixação de conduítes flexíveis ou rígidos em laje e paredes
+            (aparentes ou embutidos) para distribuição de circuitos elétricos.
+          </p>
+        </div>
+        <div id="imagens-inst">
+          <img class="selected" src="imagens/projeto-2.jpeg" alt="Instalação" />
+          <img src="imagens/projeto-7.jpeg" alt="Instalação" />
+          <img src="imagens/projeto-13.jpg" alt="Instalação" />
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="informacao-container">
+          <h1 class="titulo-info">
+            Quadros de distribuição e painéis de comando
+          </h1>
+          <p class="texto-info">
+            Dimensionamento e montagem (QDC) dijuntores, DR’s e DPS’s conforme
+            projetos. Montagens de painéis de comando para acionamento de
+            motores elétricos, monofásicos e trifásicos.
+          </p>
+        </div>
+        <div id="imagens-quadros">
+          <img
+            class="selected"
+            src="imagens/projeto-1.jpeg"
+            alt="Quadros/Paineis"
+          />
+          <img src="imagens/projeto-8.jpg" alt="Quadros/Paineis" />
+          <img src="imagens/projeto-10.jpg" alt="Quadros/Paineis" />
+          <img src="imagens/projeto-11.jpg" alt="Quadros/Paineis" />
+          <img src="imagens/projeto-12.jpg" alt="Quadros/Paineis" />
+          <img src="imagens/projeto-16.jpg" alt="Quadros/Paineis" />
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="informacao-container">
+          <h1 class="titulo-info">Iluminação</h1>
+          <p class="texto-info">
+            Iluminações em gesso embutido ou aparente, LED, trilhos energizados
+            com spots cênicos, etc.
+          </p>
+        </div>
+        <div id="imagens-ilum">
+          <img class="selected" src="imagens/projeto-5.jpeg" alt="Iluminação" />
+          <img src="imagens/projeto-6.jpeg" alt="Iluminação" />
+          <img src="imagens/projeto-9.jpeg" alt="Iluminação" />
+          <img src="imagens/projeto-12.jpeg" alt="Iluminação" />
+          <img src="imagens/projeto-14.jpeg" alt="Iluminação" />
+        </div>
+      </div>
+    </section>
+
+    <!-- <img
+      src="https://img.icons8.com/material/48/000000/instagram-new--v1.png"
+    />
+    <img
+      src="https://img.icons8.com/material/48/000000/facebook-circled--v1.png"
+    /> -->
     <script src="javascript.js"></script>
   </body>
 </html>
