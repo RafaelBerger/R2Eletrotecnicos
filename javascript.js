@@ -3,12 +3,17 @@ let imagesInst = document.querySelectorAll("#imagens-inst img");
 let imagesQuadros = document.querySelectorAll("#imagens-quadros img");
 let imagesIlum = document.querySelectorAll("#imagens-ilum img");
 
-let time = 1000;
-let currentImageIndex = 0;
 let maxBanner = imagesBanner.length;
 let maxInst = imagesInst.length;
 let maxQuadros = imagesQuadros.length;
 let maxIlum = imagesIlum.length;
+
+let currentImageIndex = 0;
+let currentImageIndexInst = 0;
+let currentImageIndexQuadros = 0;
+let currentImageIndexIlum = 0;
+
+let time = 4000;
 
 function nextImageBanner() {
   imagesBanner[currentImageIndex].classList.remove("selected");
@@ -23,45 +28,47 @@ function nextImageBanner() {
 }
 
 function nextImageInst() {
-  imagesInst[currentImageIndex].classList.remove("selected");
+  imagesInst[currentImageIndexInst].classList.remove("selected-inst");
 
-  currentImageIndex++;
+  currentImageIndexInst++;
 
-  if (currentImageIndex >= maxInst) {
-    currentImageIndex = 0;
+  if (currentImageIndexInst >= maxInst) {
+    currentImageIndexInst = 0;
   }
 
-  imagesInst[currentImageIndex].classList.add("selected");
+  imagesInst[currentImageIndexInst].classList.add("selected-inst");
 }
 
 function nextImageQuadros() {
-  imagesInst[currentImageIndex].classList.remove("selected");
+  imagesQuadros[currentImageIndexQuadros].classList.remove("selected-quadros");
 
-  currentImageIndex++;
+  currentImageIndexQuadros++;
 
-  if (currentImageIndex >= maxQuadros) {
-    currentImageIndex = 0;
+  if (currentImageIndexQuadros >= maxQuadros) {
+    currentImageIndexQuadros = 0;
   }
 
-  imagesInst[currentImageIndex].classList.add("selected");
+  imagesQuadros[currentImageIndexQuadros].classList.add("selected-quadros");
 }
 
 function nextImageIlum() {
-  imagesInst[currentImageIndex].classList.remove("selected");
+  imagesIlum[currentImageIndexIlum].classList.remove("selected-ilum");
 
-  currentImageIndex++;
+  currentImageIndexIlum++;
 
-  if (currentImageIndex >= maxIlum) {
-    currentImageIndex = 0;
+  if (currentImageIndexIlum >= maxIlum) {
+    currentImageIndexIlum = 0;
   }
 
-  imagesInst[currentImageIndex].classList.add("selected");
+  imagesIlum[currentImageIndexIlum].classList.add("selected-ilum");
 }
 
 function start() {
   setInterval(() => {
     nextImageBanner();
     nextImageInst();
+    nextImageQuadros();
+    nextImageIlum();
   }, time);
 }
 
