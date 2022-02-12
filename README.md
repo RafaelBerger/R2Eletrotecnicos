@@ -5,6 +5,11 @@ Site criado para auxiliar dois Eletrotécnicos autônomos.
 LandingPage responsiva apresentando os serviços e contato dos profissionais.
 
 
+<div align="left">
+<img src="https://user-images.githubusercontent.com/84355579/153687671-7e823b4b-9174-44eb-b9d8-fafb7952ef5e.jpg" width="450px" />
+ </div>
+
+
 ## Funcionalidades
 
 - Responsividade com mediaquery
@@ -34,6 +39,11 @@ LandingPage responsiva apresentando os serviços e contato dos profissionais.
 Site created to assist two autonomous Electrotechnicians.
 
 Responsive LandingPage presenting services and contact of the professionals.
+
+
+<div align="left">
+<img src="https://user-images.githubusercontent.com/84355579/153687671-7e823b4b-9174-44eb-b9d8-fafb7952ef5e.jpg" width="450px" />
+ </div>
 
 
 ## Functionalities
